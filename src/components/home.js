@@ -9,7 +9,7 @@ class Home extends React.Component {
         this.state = {
             localState: ""
         }
-        console.log(props)
+        
     }
 
     render() {
@@ -20,18 +20,20 @@ class Home extends React.Component {
                
                     {Data.map(({ title, text, comments, id }) => {
                         return (
+                            
+                        <div className="post">
                             <Link to={{
                                 pathname: `/details/${id}`,
                                 state: {
                                     detailsItem: Data
                                 }
                             }}>
-                        <div className="post">
                             <h2>{title}</h2>
-
-                            <span>{comments}</span>
+                            </Link>
+                            {comments.length <= 0 ? <span>No comments yet, be the first to post</span> : <span>{`${comments.length} comments`}</span>}
+                           
                         </div>
-                        </Link>)
+                        )
                     })}
                
                 

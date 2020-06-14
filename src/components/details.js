@@ -3,16 +3,20 @@ import { connect } from 'react-redux';
 import CommentList from "./commentList"
 import logo from "../logo192.png"
 import { Link } from "react-router-dom";
+import { v4 as uuidv4 } from 'uuid';
+
 
 class Details extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
             detailsLocalState: "",
-            value: ""
+            value: "",
+            deleteId: ""
         }
         this.blogId = this.props.location.pathname.split("/")[2];
-        console.log(props)
+        this.date = Date().split("G")[0];
+        
     }
 
     componentDidMount() {
@@ -28,16 +32,29 @@ class Details extends React.Component {
         this.setState({value: e.target.value})
     }
 
+    receiveIdList = (idList) => {
+      console.log(idList)
+       this.props.deleteComment(idList, this.blogId)
+    }
+
+   
+
     addCommentButton = () => {
-        this.props.addNewComment(this.state.value)
-        console.log(this.props)
+      var stateValue = this.state.value;
+        const obj = {name: this.state.value,
+        date: this.date,
+        id: uuidv4()}
+        this.props.addNewComment(obj, this.blogId)
+        
     }
 
     createMarkup = () => {
         return { __html: this.state.detailsLocalState.htmlText };
     }
+
+   
     render() {
-        console.log(typeof this.state.detailsLocalState.htmlText)
+       console.log(this.state.deleteId)
         return (
             <div>
               <header>
@@ -54,7 +71,7 @@ class Details extends React.Component {
             <input onChange={this.commentHandle} value={this.state.commentHandle} />
             <button onClick={this.addCommentButton}>Add comment</button>
                 </div>
-            <CommentList/>
+            <CommentList callBackList={this.receiveIdList} commentId={this.blogId}/>
             </div>
         )
     }
@@ -63,11 +80,23 @@ class Details extends React.Component {
 const mapDispatchToProps = (dispatch) => {
     return {
         addNewComment: (commentText, blogId) => {
-            console.log(commentText);
+           
             const action = {
                 type: "ADD_COMMENT",
                 payload: {
-                    comment: commentText
+                    comment: commentText,
+                    id: blogId
+                }
+            }
+            dispatch(action)
+
+        },
+        deleteComment: (receiveIdList, blogId) => {
+            const action = {
+                type: "DELETE_COMMENT",
+                payload: {
+                    deleteId: receiveIdList,
+                    id: blogId
                 }
             }
             dispatch(action)

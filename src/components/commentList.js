@@ -1,29 +1,48 @@
 import React, { Component } from 'react';
+// import Comment from "./comment";
 import { connect } from 'react-redux';
 
 class CommentList extends Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
-        this.date = Date().split("G")[0];
-       console.log(props)
+        this.state = {
+            value: ''
+        }
+        console.log(props)
+    }
+
+    receiveId = (deleteId) => {
+        return this.props.callBackList(deleteId)
     }
 
     render() {
-        console.log(this.props)
+        console.log(this.props.commentsListData)
+
         return (
             <div>
                 {this.props.commentsListData.map((comment) => {
-                    return (
-                        <div>
-                            <time>{this.date}</time>
-                            {comment}
-                        </div>
-                    )
-                })}
+                    console.log(comment)
+                    if (comment) {
+                        return <div>{comment.comments.map((el) => {
+                            console.log(el)
+                            if (el) {
+                                return <div>
+                                    <p>{el.name}</p>
+                                    <time>{el.date}</time>
+                                    <p>id: {el.id}</p>
+                                    <p></p>
+                                    <button onClick={this.receiveId(el.id)}>Delete</button>
+                                </div>
+                            } else { return null }
+                        })}</div>
+                    } else { return null }
+                }
 
-            </div>
-        )
+                )
+
+                }
+            </div>)
     }
 }
 
@@ -32,12 +51,18 @@ const mapStateToProps = (state, ownProps) => {
     console.log(state)
 
     return {
-        commentsListData: state.comments.map((comment) => {
-            return `${comment} `
+        commentsListData: state.comments.map((post) => {
+
+            if (post.id === ownProps.commentId) {
+                console.log(post)
+                return post
+            }
         })
     }
+
 }
 
 export default connect(
-    mapStateToProps
+    mapStateToProps,
+    null
 )(CommentList)
