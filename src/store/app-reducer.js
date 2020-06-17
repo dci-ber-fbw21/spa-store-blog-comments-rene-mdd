@@ -21,23 +21,14 @@ function appReducer(state = initialState, action) {
                 newArrayPost
             }
             case "DELETE_COMMENT":
-                let filterComments;
                 let deletedComment = state.comments.map((post) => {
-                    console.log(action.payload)
                     if (post.id === action.payload.id) {
-                        console.log(post)
                         let newArray = [...post.comments];
-                        console.log(newArray)
-                        console.log(action.payload)
-                        filterComments = newArray.filter(el => el.id !== action.payload.deleteId);
-                        console.log(filterComments)
-                        post.comments = filterComments
-                       
+                        const filterComments = newArray.filter(el => el.id !== action.payload.deleteId);
+                        return post.comments = filterComments;
+                        // return {...post, comments: filterComments}
                     }
-                   
-                })
-                    
-                console.log(filterComments)
+                });
                 console.log(deletedComment)
                 return {...state,
                     deletedComment}
