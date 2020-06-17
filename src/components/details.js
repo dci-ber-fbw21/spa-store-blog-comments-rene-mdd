@@ -11,16 +11,17 @@ class Details extends React.Component {
         super(props)
         this.state = {
             detailsLocalState: "",
-            value: "",
-            deleteId: ""
+            textarea: "",
+            deleteId: "",
+            userName: ""
         }
         this.blogId = this.props.location.pathname.split("/")[2];
         this.date = Date().split("G")[0];
-        
+
     }
 
     componentDidMount() {
-        
+
         const homeStateData = this.props.location.state.detailsItem;
         const found = homeStateData.find(element => element.id === this.blogId);
         this.setState({
@@ -29,49 +30,61 @@ class Details extends React.Component {
     }
 
     commentHandle = (e) => {
-        this.setState({value: e.target.value})
+        this.setState({ textarea: e.target.value })
+    }
+
+    nameHandle = (e) => {
+        this.setState({ userName: e.target.value })
     }
 
     receiveIdList = (idList) => {
-      console.log(idList)
-       this.props.deleteComment(idList, this.blogId)
+        console.log(idList)
+        this.props.deleteComment(idList, this.blogId);
     }
 
-   
-
-    addCommentButton = () => {
-      var stateValue = this.state.value;
-        const obj = {name: this.state.value,
-        date: this.date,
-        id: uuidv4()}
-        this.props.addNewComment(obj, this.blogId)
+    addCommentButton = (e) => {
         
+        const obj = {
+            text: this.state.textarea,
+            date: this.date,
+            id: uuidv4(),
+            userName: this.state.userName
+        }
+       
+        this.props.addNewComment(obj, this.blogId);
+       this.setState({userName: " ",
+    textarea: " "});
     }
 
     createMarkup = () => {
         return { __html: this.state.detailsLocalState.htmlText };
     }
 
-   
+
     render() {
-       console.log(this.state.deleteId)
+        console.log(this.state.deleteId)
         return (
-            <div>
-              <header>
-                  <Link to="/">
-                  <img src={logo}/>
-                  </Link>
-              </header>
+            <div className="details">
+                <header>
+                    <Link to="/">
+                        <img src={logo} />
+                    </Link>
+                </header>
                 <h2>{this.state.detailsLocalState.title}</h2>
                 <div dangerouslySetInnerHTML={this.createMarkup()} />
                 <div className="divComment">
-            <span>
-                leave a comment
-            </span>
-            <input onChange={this.commentHandle} value={this.state.commentHandle} />
-            <button onClick={this.addCommentButton}>Add comment</button>
+            <header>
+                <h3>leave a comment</h3>
+                        
+            </header>
+            <CommentList callBackList={this.receiveIdList} commentId={this.blogId} />
+           
+            <label htmlFor="name">
+                    <input onChange={this.nameHandle} value={this.state.userName} />Your name
+                    </label>
+                    <textarea onChange={this.commentHandle} value={this.state.textarea} />
+                    <button className="addButton" onClick={this.addCommentButton}>Add comment</button>
                 </div>
-            <CommentList callBackList={this.receiveIdList} commentId={this.blogId}/>
             </div>
         )
     }
@@ -80,7 +93,7 @@ class Details extends React.Component {
 const mapDispatchToProps = (dispatch) => {
     return {
         addNewComment: (commentText, blogId) => {
-           
+
             const action = {
                 type: "ADD_COMMENT",
                 payload: {

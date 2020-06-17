@@ -27,12 +27,11 @@ class CommentList extends Component {
                         return <div>{comment.comments.map((el) => {
                             console.log(el)
                             if (el) {
-                                return <div>
-                                    <p>{el.name}</p>
-                                    <time>{el.date}</time>
-                                    <p>id: {el.id}</p>
-                                    <p></p>
-                                    <button onClick={this.receiveId(el.id)}>Delete</button>
+                                return <div className="commentBox">
+                                    <h4>Name: <span>{el.userName}</span></h4>
+                                    <time>Date: <span>{el.date}</span></time>
+                                    <p>Comment: <span>{el.text}</span></p>
+                                    <button className="commentButton" onClick={(e) => this.receiveId(el.id)}>Delete</button>
                                 </div>
                             } else { return null }
                         })}</div>
