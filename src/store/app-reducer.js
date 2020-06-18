@@ -25,7 +25,8 @@ function appReducer(state = initialState, action) {
                     if (post.id === action.payload.id) {
                         let newArray = [...post.comments];
                         const filterComments = newArray.filter(el => el.id !== action.payload.deleteId);
-                        return post.comments = filterComments;
+                        let newObj = {...post, comments: filterComments}
+                        return newObj;
                         // return {...post, comments: filterComments}
                     }
                 });
