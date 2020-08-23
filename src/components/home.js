@@ -1,46 +1,40 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Data from "../data/data.json";
+import React from 'react';
+import { Item, Icon } from 'semantic-ui-react'
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 
-
-class Home extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            localState: ""
-        }
-        
+const Home = (props) => {
+    const { posts } = props;
+    function checkComments(comments) {
+        if (comments.length < 1) return "No comments yet";
+        if (comments.length === 1) return comments.length + " comment";
+        if (comments.length > 1) return comments.length + " comments";
     }
+    function renderItems() {
+        return <Item.Group divided  >
+            {posts.map(({ slug, title, id, text, comments }, index) => {
+                return <Item as={Link} to={`${slug}`} key={id}>
+                    <Item.Image size='small' src={`https://picsum.photos/200/20${index}`} />
+                    <Item.Content>
+                        <Item.Header as='a'>{title}</Item.Header>
+                        <Item.Description>{text}</Item.Description>
+                        <Item.Extra>
+                            <Icon color='blue' name='comment' /> {checkComments(comments)}
+                        </Item.Extra>
+                    </Item.Content>
+                </Item>
+            })}
 
-    render() {
-        return (
-            
-            <div className="main">
-                <h1>Blog overview</h1>
-               
-                    {Data.map(({ title, text, comments, id }) => {
-                        return (
-                            
-                        <div className="post">
-                            <Link to={{
-                                pathname: `/details/${id}`,
-                                state: {
-                                    detailsItem: Data
-                                }
-                            }}>
-                            <h2>{title}</h2>
-                            </Link>
-                            {comments.length <= 0 ? <span>No comments yet, be the first to post</span> : <span>{`${comments.length} comments`}</span>}
-                           
-                        </div>
-                        )
-                    })}
-               
-                
-            </div>
-            
-        )
+        </Item.Group>
+    }
+    return (
+        renderItems()
+    );
+}
+const mapStateToProps = (state) => {
+
+    return {
+        posts: state.posts
     }
 }
-
-export default Home;
+export default connect(mapStateToProps)(Home);

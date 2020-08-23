@@ -1,26 +1,31 @@
 import React from 'react';
 import './App.css';
-import Home from "./components/home";
-import Details from "./components/details"
+import 'semantic-ui-css/semantic.min.css'
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Link
 } from "react-router-dom";
-
-class App extends React.Component {
-  render() {
-    return (
-      <Router>
-        <div className="App">
-          <Switch>
-            <Route path="/details/:id" component={Details}/>
-            <Route exact path="/" component={Home} />
-          </Switch>
-        </div>
-      </Router>
-    );
+import ProductDetails from './components/ProductDetails';
+import Home from './components/Home';
+import { Menu } from 'semantic-ui-react';
+import 'semantic-ui-css/semantic.min.css'
+function App() {
+  function markUp() {
+    return <Router>
+      <Menu >
+        <Menu.Item icon="home" as={Link} to="/" />
+      </Menu>
+      <Switch>
+        <Route path={'/:slug'} component={ProductDetails} />
+        <Route path="/" component={Home} />
+      </Switch>
+    </Router>
   }
+  return (
+    markUp()
+  );
 }
 
 export default App;
