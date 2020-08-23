@@ -10,7 +10,6 @@ const ProductDetails = (props) => {
         text: "",
         date: "",
         id: "",
-
     });
     const [correctPost, setCorrectPost] = useState({});
 
@@ -47,7 +46,6 @@ const ProductDetails = (props) => {
         return correctPost.comments && correctPost.comments.length > 0 ?
             correctPost.comments.map(({ text, id, date, userName }) => {
                 const dateToFormat = new Date(date)
-
                 return (
                     <Comment.Group minimal key={id}>
                         <Comment>
