@@ -10,6 +10,7 @@ const ProductDetails = (props) => {
         text: "",
         date: "",
         id: "",
+
     });
     const [correctPost, setCorrectPost] = useState({});
 
@@ -46,6 +47,7 @@ const ProductDetails = (props) => {
         return correctPost.comments && correctPost.comments.length > 0 ?
             correctPost.comments.map(({ text, id, date, userName }) => {
                 const dateToFormat = new Date(date)
+
                 return (
                     <Comment.Group minimal key={id}>
                         <Comment>
@@ -56,10 +58,8 @@ const ProductDetails = (props) => {
                                     <span><Moment date={dateToFormat} fromNow ago /></span>
                                 </Comment.Metadata>
                                 <Comment.Text>{text}</Comment.Text>
-                                <Comment.Actions >
-                                    <Button negative size="mini">
-                                    <a href="#" onClick={() => props.deleteComment(id, props.match.params.slug)}>Delete</a>
-                                    </Button>
+                                <Comment.Actions>
+                                    <a onClick={() => props.deleteComment(id, props.match.params.slug)}>Delete</a>
                                 </Comment.Actions>
                             </Comment.Content>
                         </Comment>

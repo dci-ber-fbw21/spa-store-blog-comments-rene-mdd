@@ -14,7 +14,7 @@ const Home = (props) => {
         return <Item.Group divided  >
             {posts.map(({ slug, title, id, text, comments }, index) => {
                 return <Item as={Link} to={`${slug}`} key={id}>
-                    <Item.Image size='small' src={`https://picsum.photos/200/20${index}`} />
+                    <Item.Image size='small' src={`https://picsum.photos/200/20${index}`}  />
                     <Item.Content>
                         <Item.Header as='a'>{title}</Item.Header>
                         <Item.Description>{text}</Item.Description>

@@ -7,16 +7,14 @@ const initState = {
 const rootReducer = (state = initState, action) => {
 
     if (action.type === "ADD_COMMENT") {
-        console.log(state)
+
         const posts = state.posts.map(post => {
             if (post.slug === action.payload.comment.postSlug) {
                 post.comments.unshift(action.payload.comment);
-                
-
             }
-            
             return post
         });
+
         return { ...state, posts }
     }
     if (action.type === "DELETE_COMMENT") {
