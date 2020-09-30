@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/react-redux-blog-rene-mdd/static/css/main.4a65eb02.chunk.css",
-    "main.js": "/react-redux-blog-rene-mdd/static/js/main.c8c49bd2.chunk.js",
-    "main.js.map": "/react-redux-blog-rene-mdd/static/js/main.c8c49bd2.chunk.js.map",
-    "runtime-main.js": "/react-redux-blog-rene-mdd/static/js/runtime-main.e6d91fbc.js",
-    "runtime-main.js.map": "/react-redux-blog-rene-mdd/static/js/runtime-main.e6d91fbc.js.map",
+    "main.js": "/react-redux-blog-rene-mdd/static/js/main.82aef9b6.chunk.js",
+    "main.js.map": "/react-redux-blog-rene-mdd/static/js/main.82aef9b6.chunk.js.map",
+    "runtime-main.js": "/react-redux-blog-rene-mdd/static/js/runtime-main.63f320bf.js",
+    "runtime-main.js.map": "/react-redux-blog-rene-mdd/static/js/runtime-main.63f320bf.js.map",
     "static/css/2.a5a531f5.chunk.css": "/react-redux-blog-rene-mdd/static/css/2.a5a531f5.chunk.css",
-    "static/js/2.e7972dfa.chunk.js": "/react-redux-blog-rene-mdd/static/js/2.e7972dfa.chunk.js",
-    "static/js/2.e7972dfa.chunk.js.map": "/react-redux-blog-rene-mdd/static/js/2.e7972dfa.chunk.js.map",
+    "static/js/2.d0ef4fc5.chunk.js": "/react-redux-blog-rene-mdd/static/js/2.d0ef4fc5.chunk.js",
+    "static/js/2.d0ef4fc5.chunk.js.map": "/react-redux-blog-rene-mdd/static/js/2.d0ef4fc5.chunk.js.map",
     "index.html": "/react-redux-blog-rene-mdd/index.html",
-    "precache-manifest.dea55316fb2da150b8b426a6f2e9c422.js": "/react-redux-blog-rene-mdd/precache-manifest.dea55316fb2da150b8b426a6f2e9c422.js",
+    "precache-manifest.75a6bad73a7798ee91e02f966f2a64df.js": "/react-redux-blog-rene-mdd/precache-manifest.75a6bad73a7798ee91e02f966f2a64df.js",
     "service-worker.js": "/react-redux-blog-rene-mdd/service-worker.js",
     "static/css/2.a5a531f5.chunk.css.map": "/react-redux-blog-rene-mdd/static/css/2.a5a531f5.chunk.css.map",
     "static/css/main.4a65eb02.chunk.css.map": "/react-redux-blog-rene-mdd/static/css/main.4a65eb02.chunk.css.map",
-    "static/js/2.e7972dfa.chunk.js.LICENSE.txt": "/react-redux-blog-rene-mdd/static/js/2.e7972dfa.chunk.js.LICENSE.txt",
+    "static/js/2.d0ef4fc5.chunk.js.LICENSE.txt": "/react-redux-blog-rene-mdd/static/js/2.d0ef4fc5.chunk.js.LICENSE.txt",
     "static/media/semantic.min.css": "/react-redux-blog-rene-mdd/static/media/outline-icons.ef60a4f6.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.e6d91fbc.js",
+    "static/js/runtime-main.63f320bf.js",
     "static/css/2.a5a531f5.chunk.css",
-    "static/js/2.e7972dfa.chunk.js",
+    "static/js/2.d0ef4fc5.chunk.js",
     "static/css/main.4a65eb02.chunk.css",
-    "static/js/main.c8c49bd2.chunk.js"
+    "static/js/main.82aef9b6.chunk.js"
   ]
 }

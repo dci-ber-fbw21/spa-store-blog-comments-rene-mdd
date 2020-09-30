@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ca2fbbc73b50735eb778afa8dba3bc89",
+    "revision": "1cf2c7651baef587833f37065744795e",
     "url": "/react-redux-blog-rene-mdd/index.html"
   },
   {
-    "revision": "59482f683ffb20b950fe",
+    "revision": "7a59fbf97f3d7bd62081",
     "url": "/react-redux-blog-rene-mdd/static/css/2.a5a531f5.chunk.css"
   },
   {
-    "revision": "648f7084dd3a1f2f2ad4",
+    "revision": "e11579e827e3daf4d26e",
     "url": "/react-redux-blog-rene-mdd/static/css/main.4a65eb02.chunk.css"
   },
   {
-    "revision": "59482f683ffb20b950fe",
-    "url": "/react-redux-blog-rene-mdd/static/js/2.e7972dfa.chunk.js"
+    "revision": "7a59fbf97f3d7bd62081",
+    "url": "/react-redux-blog-rene-mdd/static/js/2.d0ef4fc5.chunk.js"
   },
   {
-    "revision": "2f9c3ad90e32a19da25b1204531d733e",
-    "url": "/react-redux-blog-rene-mdd/static/js/2.e7972dfa.chunk.js.LICENSE.txt"
+    "revision": "0ee8d514ff393d7f63fa680844198e89",
+    "url": "/react-redux-blog-rene-mdd/static/js/2.d0ef4fc5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "648f7084dd3a1f2f2ad4",
-    "url": "/react-redux-blog-rene-mdd/static/js/main.c8c49bd2.chunk.js"
+    "revision": "e11579e827e3daf4d26e",
+    "url": "/react-redux-blog-rene-mdd/static/js/main.82aef9b6.chunk.js"
   },
   {
-    "revision": "5472948519eeaf18d674",
-    "url": "/react-redux-blog-rene-mdd/static/js/runtime-main.e6d91fbc.js"
+    "revision": "3c412c426c51c45903b7",
+    "url": "/react-redux-blog-rene-mdd/static/js/runtime-main.63f320bf.js"
   },
   {
     "revision": "13db00b7a34fee4d819ab7f9838cc428",
