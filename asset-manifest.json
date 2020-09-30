@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/rene-mdd.github.io/react-redux-blog-rene-mdd/static/css/main.4a65eb02.chunk.css",
-    "main.js": "/rene-mdd.github.io/react-redux-blog-rene-mdd/static/js/main.3b6046c9.chunk.js",
-    "main.js.map": "/rene-mdd.github.io/react-redux-blog-rene-mdd/static/js/main.3b6046c9.chunk.js.map",
-    "runtime-main.js": "/rene-mdd.github.io/react-redux-blog-rene-mdd/static/js/runtime-main.3439d1ec.js",
-    "runtime-main.js.map": "/rene-mdd.github.io/react-redux-blog-rene-mdd/static/js/runtime-main.3439d1ec.js.map",
-    "static/css/2.fb0bfe4d.chunk.css": "/rene-mdd.github.io/react-redux-blog-rene-mdd/static/css/2.fb0bfe4d.chunk.css",
-    "static/js/2.d0ef4fc5.chunk.js": "/rene-mdd.github.io/react-redux-blog-rene-mdd/static/js/2.d0ef4fc5.chunk.js",
-    "static/js/2.d0ef4fc5.chunk.js.map": "/rene-mdd.github.io/react-redux-blog-rene-mdd/static/js/2.d0ef4fc5.chunk.js.map",
-    "index.html": "/rene-mdd.github.io/react-redux-blog-rene-mdd/index.html",
-    "precache-manifest.a53df9532421244eba47ec420b153565.js": "/rene-mdd.github.io/react-redux-blog-rene-mdd/precache-manifest.a53df9532421244eba47ec420b153565.js",
-    "service-worker.js": "/rene-mdd.github.io/react-redux-blog-rene-mdd/service-worker.js",
-    "static/css/2.fb0bfe4d.chunk.css.map": "/rene-mdd.github.io/react-redux-blog-rene-mdd/static/css/2.fb0bfe4d.chunk.css.map",
-    "static/css/main.4a65eb02.chunk.css.map": "/rene-mdd.github.io/react-redux-blog-rene-mdd/static/css/main.4a65eb02.chunk.css.map",
-    "static/js/2.d0ef4fc5.chunk.js.LICENSE.txt": "/rene-mdd.github.io/react-redux-blog-rene-mdd/static/js/2.d0ef4fc5.chunk.js.LICENSE.txt",
-    "static/media/semantic.min.css": "/rene-mdd.github.io/react-redux-blog-rene-mdd/static/media/outline-icons.ef60a4f6.woff"
+    "main.css": "/static/css/main.4a65eb02.chunk.css",
+    "main.js": "/static/js/main.cea7a1f3.chunk.js",
+    "main.js.map": "/static/js/main.cea7a1f3.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.502f60f6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.502f60f6.js.map",
+    "static/css/2.7df41cd5.chunk.css": "/static/css/2.7df41cd5.chunk.css",
+    "static/js/2.d0ef4fc5.chunk.js": "/static/js/2.d0ef4fc5.chunk.js",
+    "static/js/2.d0ef4fc5.chunk.js.map": "/static/js/2.d0ef4fc5.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.a4a192afb0880656edc03980f8e9d193.js": "/precache-manifest.a4a192afb0880656edc03980f8e9d193.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.7df41cd5.chunk.css.map": "/static/css/2.7df41cd5.chunk.css.map",
+    "static/css/main.4a65eb02.chunk.css.map": "/static/css/main.4a65eb02.chunk.css.map",
+    "static/js/2.d0ef4fc5.chunk.js.LICENSE.txt": "/static/js/2.d0ef4fc5.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/static/media/outline-icons.ef60a4f6.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.3439d1ec.js",
-    "static/css/2.fb0bfe4d.chunk.css",
+    "static/js/runtime-main.502f60f6.js",
+    "static/css/2.7df41cd5.chunk.css",
     "static/js/2.d0ef4fc5.chunk.js",
     "static/css/main.4a65eb02.chunk.css",
-    "static/js/main.3b6046c9.chunk.js"
+    "static/js/main.cea7a1f3.chunk.js"
   ]
 }
