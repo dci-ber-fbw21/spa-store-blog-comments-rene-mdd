@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.4a65eb02.chunk.css",
-    "main.js": "/static/js/main.e5bbc553.chunk.js",
-    "main.js.map": "/static/js/main.e5bbc553.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.d28a27f0.js",
-    "runtime-main.js.map": "/static/js/runtime-main.d28a27f0.js.map",
-    "static/css/2.5f1adba5.chunk.css": "/static/css/2.5f1adba5.chunk.css",
-    "static/js/2.4422337e.chunk.js": "/static/js/2.4422337e.chunk.js",
-    "static/js/2.4422337e.chunk.js.map": "/static/js/2.4422337e.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.6cf2aea6ad61f741715419b498cbf9e6.js": "/precache-manifest.6cf2aea6ad61f741715419b498cbf9e6.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.5f1adba5.chunk.css.map": "/static/css/2.5f1adba5.chunk.css.map",
-    "static/css/main.4a65eb02.chunk.css.map": "/static/css/main.4a65eb02.chunk.css.map",
-    "static/js/2.4422337e.chunk.js.LICENSE.txt": "/static/js/2.4422337e.chunk.js.LICENSE.txt",
-    "static/media/semantic.min.css": "/static/media/outline-icons.ef60a4f6.woff"
+    "main.css": "/react-redux-blog-rene-mdd/static/css/main.4a65eb02.chunk.css",
+    "main.js": "/react-redux-blog-rene-mdd/static/js/main.02bf5705.chunk.js",
+    "main.js.map": "/react-redux-blog-rene-mdd/static/js/main.02bf5705.chunk.js.map",
+    "runtime-main.js": "/react-redux-blog-rene-mdd/static/js/runtime-main.32e24855.js",
+    "runtime-main.js.map": "/react-redux-blog-rene-mdd/static/js/runtime-main.32e24855.js.map",
+    "static/css/2.3cdc17f1.chunk.css": "/react-redux-blog-rene-mdd/static/css/2.3cdc17f1.chunk.css",
+    "static/js/2.913a7852.chunk.js": "/react-redux-blog-rene-mdd/static/js/2.913a7852.chunk.js",
+    "static/js/2.913a7852.chunk.js.map": "/react-redux-blog-rene-mdd/static/js/2.913a7852.chunk.js.map",
+    "index.html": "/react-redux-blog-rene-mdd/index.html",
+    "precache-manifest.c362faf33a3ecf5d44704d79a7e6b7bb.js": "/react-redux-blog-rene-mdd/precache-manifest.c362faf33a3ecf5d44704d79a7e6b7bb.js",
+    "service-worker.js": "/react-redux-blog-rene-mdd/service-worker.js",
+    "static/css/2.3cdc17f1.chunk.css.map": "/react-redux-blog-rene-mdd/static/css/2.3cdc17f1.chunk.css.map",
+    "static/css/main.4a65eb02.chunk.css.map": "/react-redux-blog-rene-mdd/static/css/main.4a65eb02.chunk.css.map",
+    "static/js/2.913a7852.chunk.js.LICENSE.txt": "/react-redux-blog-rene-mdd/static/js/2.913a7852.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/react-redux-blog-rene-mdd/static/media/outline-icons.ef60a4f6.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.d28a27f0.js",
-    "static/css/2.5f1adba5.chunk.css",
-    "static/js/2.4422337e.chunk.js",
+    "static/js/runtime-main.32e24855.js",
+    "static/css/2.3cdc17f1.chunk.css",
+    "static/js/2.913a7852.chunk.js",
     "static/css/main.4a65eb02.chunk.css",
-    "static/js/main.e5bbc553.chunk.js"
+    "static/js/main.02bf5705.chunk.js"
   ]
 }
