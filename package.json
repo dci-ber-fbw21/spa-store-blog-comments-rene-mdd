@@ -1,6 +1,10 @@
 {
+  "homepage": "https://github.com/rene-mdd/react-redux-blog-rene-mdd",
   "name": "react-redux-blog-rene-mdd",
   "version": "0.1.0",
+  "optionalDependencies": {
+    "fsevents": "^2.1.3"
+  },
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
