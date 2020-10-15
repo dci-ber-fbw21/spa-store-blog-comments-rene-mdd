@@ -1,5 +1,6 @@
 {
-  "name": "blog-comments-rene",
+  "homepage": "react-redux-blog-rene-mdd",
+  "name": "react-redux-blog-rene-mdd",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
