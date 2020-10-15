@@ -8,7 +8,5 @@ Note: don't forget to install the node modules!: npm install
 
 To run: npm start
 
-To run online click or past this link in the browser: https://rene-mdd.github.io/react-redux-blog-rene-mdd/
-
 
 
